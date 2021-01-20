@@ -1,6 +1,8 @@
 ## This project is bootstrapped with [Next.js](https://nextjs.org/) and [SWR](https://swr.vercel.app/docs/mutation)
 
-## `Getting Started`:
+## View live [IssuesExplorer](https://issues-explorer-fe.vercel.app/).
+
+## Getting Started
 
 This app uses `.env.local`. Please check the `.env.local.example`
 
