@@ -1,0 +1,38 @@
+.container {
+  height: 100%;
+  background-color: var(--secondary-magenta);
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  box-shadow: 0 2px 30px rgba(12, 12, 12, 0.25), 0 3px 6px rgba(12, 12, 12, 0.2);
+  cursor: default;
+}
+
+.container > :nth-child(1) {
+  align-self: center;
+  color: var(--base-white);
+  font-family: MontserratBold;
+  font-size: var(--font-XL);
+  padding-left: var(--issue-border-padding);
+}
+
+.container > :nth-child(2) {
+  align-self: center;
+  justify-self: flex-end;
+  color: var(--base-grey);
+  font-family: MontserratLight;
+  font-size: var(--font-L);
+  padding-right: var(--issue-border-padding);
+}
+
+@media only screen and (max-width: 980px) {
+  .container > :nth-child(1) {
+    grid-column: 1/4;
+    justify-self: center;
+    padding-left: 0;
+  }
+
+  .container > :nth-child(2) {
+    display: none;
+    padding-right: 0;
+  }
+}

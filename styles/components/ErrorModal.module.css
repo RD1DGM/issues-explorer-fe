@@ -1,0 +1,93 @@
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  animation: show 250ms ease-in forwards;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--base-grey);
+  opacity: 0.75;
+  z-index: 2;
+}
+
+.modal_card {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 0.3fr 0.7fr;
+  height: 21.875rem;
+  width: 38.125rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--base-white);
+  border-radius: 7.5px;
+  z-index: 3;
+}
+
+.modal_card_header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--secondary-magenta);
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+}
+
+.modal_card_header > img {
+  height: 3.75rem;
+  filter: invert(100%) sepia(17%) saturate(0%) hue-rotate(186deg)
+    brightness(113%) contrast(101%);
+}
+
+.modal_card_body {
+  display: grid;
+  grid-template-rows: 0.4fr 0.2fr 0.4fr;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 10px 20px rgba(12, 12, 12, 0.25), 0 6px 6px rgba(12, 12, 12, 0.2);
+}
+
+.modal_card_body > :nth-child(1) {
+    font-size: var(--font-L);
+    font-family: MontserratBold;
+    letter-spacing: .125rem;
+}
+
+.modal_card_body > :nth-child(2) {
+    font-size: var(--font-M);
+}
+
+.modal_card_body > :nth-child(3) {
+  height: 2.5rem;
+  width: 6.5rem;
+  border: none;
+  border-radius: 2px;
+  font-size: var(--font-M);
+  color: var(--base-white);
+  background-color: var(--secondary-magenta);
+  cursor: pointer;
+  transform: translateY(75%);
+}
+
+.modal_card_body > :nth-child(3):active {
+    background-color: var(--base-magenta);
+    transition: background-color 100ms ease-in;
+}
+
+.modal_card_body * {
+  font-family: MontserratRegular;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,7 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.46fr 0.54fr;
+  gap: 1.75rem 0;
+  background: var(--secondary-magenta);
+}

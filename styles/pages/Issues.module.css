@@ -1,0 +1,11 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.075fr 0.075fr 0.8fr 0.05fr;
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    grid-template-rows: 0.075fr 0.275fr 0.65fr;
+  }
+}

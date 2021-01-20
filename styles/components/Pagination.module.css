@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--base-white);
+}
+
+.container > button {
+  height: 2.5rem;
+  width: 15rem;
+  margin: 2rem 0;
+  border: none;
+  color: var(--secondary-blue);
+  background-color: transparent;
+  font-family: MontserratRegular;
+  font-size: var(--font-XL);
+  cursor: pointer;
+}

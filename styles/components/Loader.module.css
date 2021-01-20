@@ -1,0 +1,22 @@
+.not_loading {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.loading_effect {
+  position: absolute;
+  height: 0.375rem;
+  animation: start 900ms ease-in forwards;
+}
+
+@keyframes start {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100vw;
+    background-color: var(--base-blue);
+  }
+}

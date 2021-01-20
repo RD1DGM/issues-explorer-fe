@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.95fr 0.1fr 0.95fr;
+  background-color: var(--secondary-magenta);
+  font-family: MontserratBold;
+  color: var(--base-white);
+  justify-items: center;
+}
+
+.container > div {
+  grid-row: 1/2;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.container > div > h1 {
+  font-size: var(--font-XXL);
+}
+
+.container > .divider {
+  grid-row: 2/3;
+  width: 35rem;
+  height: 0.2rem;
+  background-color: var(--base-white);
+  align-self: center;
+}
+
+.container > button {
+  grid-row: 3/4;
+  align-self: flex-start;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 7.5px;
+  color: var(--base-magenta);
+  background-color: var(--base-white);
+  font-family: MontserratRegular;
+  cursor: pointer;
+}
+
+.container > button:active {
+  background-color: var(--base-magenta);
+  color: var(--base-white);
+  border: 2px solid var(--base-white);
+}

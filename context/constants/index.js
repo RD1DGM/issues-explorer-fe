@@ -1,0 +1,6 @@
+export const SET_SEARCH_INPUT = "SET_SEARCH_INPUT";
+export const GET_IS_VALID_URL = "GET_IS_VALID_URL";
+export const GET_INPUT_ERROR = "GET_INPUT_ERROR";
+export const SET_LOADING = "SET_LOADING";
+export const SET_SELECTED_FILTER = "SET_SELECTED_FILTER";
+export const SET_PAGE_NUM = "SET_PAGE_NUM";
